@@ -21,8 +21,8 @@ void string_sorter(char str[], int str_length)
     bool sorted = false;
 
     cout << "Please enter a string of size less then or equal 10 characters: ";
-    cin >> str, cout << endl;
-    cout << "The Orginal string: " << str << endl;
+    cin.getline(str, str_length), cout << endl;
+    cout << "The original string: " << str << endl;
     while(sorted == false)
     {
         index = 0;
@@ -43,5 +43,5 @@ void string_sorter(char str[], int str_length)
         }   
     }
 
-    cout << "The string in alphabetical order is: " << str;
+    cout << "The string in alphabetical order: " << str;
 }
